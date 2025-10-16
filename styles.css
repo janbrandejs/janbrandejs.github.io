@@ -20,11 +20,32 @@ body {
 
 /* Header and Navigation */
 header {
-    text-align: center;
     border-bottom: 1px solid #e9ecef;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     margin-bottom: 40px;
 }
+
+/* NEW: Flexbox container for photo and text */
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Space between photo and text */
+}
+
+/* NEW: Profile photo styling */
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes the photo circular */
+    object-fit: cover; /* Prevents image distortion */
+    border: 3px solid #e9ecef;
+}
+
+/* NEW: Container for the text next to the photo */
+.header-text {
+    text-align: left;
+}
+
 
 h1 {
     font-family: 'Lato', sans-serif;
@@ -45,7 +66,7 @@ nav ul {
     padding: 0;
     margin-top: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* Aligns nav links to the left */
     flex-wrap: wrap;
     gap: 20px;
 }
@@ -141,6 +162,20 @@ footer {
     .container {
         padding: 20px;
     }
+
+    /* NEW: Stack photo and text on mobile */
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .header-text {
+        text-align: center;
+    }
+    
+    nav ul {
+        justify-content: center;
+    }
     
     h1 {
         font-size: 2em;
@@ -150,3 +185,4 @@ footer {
         font-size: 1.4em;
     }
 }
+
