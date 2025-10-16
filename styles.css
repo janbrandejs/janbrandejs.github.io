@@ -23,35 +23,29 @@ header {
     border-bottom: 1px solid #e9ecef;
     padding-bottom: 30px;
     margin-bottom: 40px;
+    /* Remove text-align: center; as content will now flow around floated image */
+    overflow: hidden; /* Clear the float */
 }
 
-/* NEW: Flexbox container for photo and text */
-.header-content {
-    display: flex;
-    align-items: center;
-    gap: 30px; /* Space between photo and text */
-}
-
-/* NEW: Profile photo styling */
+/* NEW: Profile photo styling for Rohany-like layout */
 .profile-photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%; /* Makes the photo circular */
-    object-fit: cover; /* Prevents image distortion */
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Keep height same as width for perfect circle */
+    border-radius: 50%;
+    object-fit: cover;
+    float: left; /* Make the image float to the left */
+    margin-right: 30px; /* Space between photo and text */
+    margin-bottom: 15px; /* Space below photo if text wraps */
     border: 3px solid #e9ecef;
 }
-
-/* NEW: Container for the text next to the photo */
-.header-text {
-    text-align: left;
-}
-
 
 h1 {
     font-family: 'Lato', sans-serif;
     font-size: 2.5em;
     color: #212529;
-    margin: 0;
+    margin-top: 0; /* Adjust margin to align with floated image */
+    margin-bottom: 5px;
+    /* text-align: left; - implicit due to float */
 }
 
 .subtitle {
@@ -59,6 +53,8 @@ h1 {
     font-size: 1.1em;
     color: #6c757d;
     margin-top: 5px;
+    margin-bottom: 20px;
+    /* text-align: left; - implicit due to float */
 }
 
 nav ul {
@@ -163,18 +159,20 @@ footer {
         padding: 20px;
     }
 
-    /* NEW: Stack photo and text on mobile */
-    .header-content {
-        flex-direction: column;
+    /* Adjust for mobile: Center everything and clear float */
+    header {
         text-align: center;
     }
-    
-    .header-text {
-        text-align: center;
+
+    .profile-photo {
+        float: none; /* Remove float on small screens */
+        margin: 0 auto 20px auto; /* Center image and add space below */
+        display: block; /* Make it a block element to center */
     }
     
-    nav ul {
-        justify-content: center;
+    h1, .subtitle, nav ul {
+        text-align: center;
+        justify-content: center; /* Center nav links for mobile */
     }
     
     h1 {
