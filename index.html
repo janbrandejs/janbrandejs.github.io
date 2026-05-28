@@ -32,7 +32,7 @@
                 <h2>About Me</h2>
                 <p>
                     I am an interdisciplinary computational scientist, I focus on designing scalable tensor engines, which serve as the mathematical foundation for both next-generation quantum simulations and modern AI/Large Language Model (LLM) architectures.
-                    Currently a postdoctoral researcher at a CNRS quantum chemistry laboratory in Toulouse, I am developing a tensor toolchain for an Advanced ERC grant. I work on automatic optimization of tensor expressions and enabling distributed memory tensor contractions on GPUs with excellent weak scaling. Recently, I was awarded the Marie Curie Fellowship Seal of Excellence (92% score) for architecting a novel HPC tensor library utilizing <b>theory of representations</b> and <b>graph theory</b>.
+                    Currently a postdoctoral researcher in computer science at <a href="https://www.irit.fr/" target="_blank">IRIT</a> (CNRS, Toulouse), where I scale a GPU-based tensor engine for <b>structured sparsity</b> to exascale using <a href="https://starpu.gitlabpages.inria.fr/" target="_blank"><b>StarPU</b></a>. Previously, at the CNRS <a href="https://dirac.ups-tlse.fr/hamp-vqed/doku.php?id=public:members" target="_blank">Laboratoire de Chimie et Physique Quantiques</a>, I architected a tensor toolchain for an Advanced ERC grant — automatic optimization of tensor expressions and distributed memory tensor contractions on GPUs with excellent weak scaling. I was recently awarded the <a href="https://marie-sklodowska-curie-actions.ec.europa.eu/news/msca-seal-of-excellence-awarded-to-outstanding-researchers-0" target="_blank">Marie Curie Fellowship Seal of Excellence</a> (92% score) for architecting a novel HPC tensor library utilizing <b>theory of representations</b> and <b>graph theory</b>.
                 </p>
                 <a href="CV_Jan_Brandejs.pdf" class="cv-button" target="_blank">Download Full CV</a>
             </section>
@@ -42,7 +42,7 @@
                 <ul>
                     <li><b>Tensor Engines & Architecture:</b> Architecting novel libraries for tensor operations, automatic expression optimization, and graph theory-based load balancing.</li>
                     <li><b>Quantum Chemistry & Physics:</b> Coupled Cluster methods, Density Matrix Renormalization Group (DMRG), and Tree Tensor Network States.</li>
-                    <li><b>HPC & GPU Computing:</b> C++, OpenMP, MPI, SYCL, HIP/CUDA, and Fortran on EuroHPC-class systems (LUMI, Adastra, Frontier).</li>
+                    <li><b>HPC & GPU Computing:</b> C++, OpenMP, MPI, SYCL, HIP/CUDA, Kokkos, StarPU, and Fortran on EuroHPC-class systems (LUMI, Adastra, Frontier, Summit, Karolina).</li>
                     <li><b>AI & Machine Learning:</b> Deep Learning (TensorFlow), Transformers/LLM architectures.</li>
                     <li><b>Performance Optimization:</b> Hardware-aware programming, GPU profiling (Omniperf, HPCToolkit).</li>
                 </ul>
@@ -51,23 +51,28 @@
             <section id="experience">
                 <h2>Professional Experience</h2>
                 <div class="job-entry">
-                    <h3>Postdoctoral Researcher</h3>
-                    <p class="meta">Laboratoire de Chimie et Physique Quantiques, CNRS, Toulouse | 04/2022 – Present</p>
-                    <p>Architecting and developing a novel tensor toolchain for an Advanced ERC grant. Focus areas include automatic optimization of tensor expressions and achieving excellent weak scaling for distributed memory tensor contractions on GPUs.</p>
+                    <h3>Postdoctoral Researcher in Computer Science</h3>
+                    <p class="meta"><a href="https://www.irit.fr/" target="_blank">Institut de Recherche en Informatique de Toulouse (IRIT)</a>, CNRS | 05/2026 – Present</p>
+                    <p>With <a href="https://www.irit.fr/~Alfredo.Buttari/" target="_blank">Prof. Alfredo Buttari</a>. Scaling a GPU-based tensor engine for structured sparsity to exascale using StarPU.</p>
+                </div>
+                <div class="job-entry">
+                    <h3>Postdoctoral Researcher in Computational Science</h3>
+                    <p class="meta"><a href="https://dirac.ups-tlse.fr/hamp-vqed/doku.php?id=public:members" target="_blank">Laboratoire de Chimie et Physique Quantiques</a>, CNRS, Toulouse | 04/2022 – 04/2026</p>
+                    <p>With Prof. Trond Saue. Architected and developed a novel tensor toolchain for an Advanced ERC grant. Focus areas: automatic optimization of tensor expressions in the Coupled Cluster method, and excellent weak scaling for distributed memory tensor contractions on GPUs.</p>
                 </div>
                 <div class="job-entry">
                     <h3>Research Fellow</h3>
-                    <p class="meta">Wigner RCP, Budapest, Hungary | 01/2021 – 12/2021 </p>
+                    <p class="meta"><a href="https://wigner.hu/en" target="_blank">Wigner Research Centre for Physics</a>, Budapest, Hungary | 01/2021 – 12/2021 </p>
                     <p>Implemented a high-performance Tree Tensor Network State method in C++ utilizing a combined fellowship and mobility grant.</p>
                 </div>
                 <div class="job-entry">
                     <h3>HPC C++ Developer (PhD Research)</h3>
-                    <p class="meta">J. Heyrovsky Institute, Prague | 10/2018 – 12/2020 </p>
+                    <p class="meta"><a href="https://www.jh-inst.cas.cz/en" target="_blank">J. Heyrovsky Institute of Physical Chemistry, CAS</a>, Prague | 10/2018 – 12/2020 </p>
                     <p>One of 3 core developers of the MOLMPS package, achieving the first efficient MPI parallelization of the DMRG method for chemists, scalable to over 100 nodes.</p>
                 </div>
                 <div class="job-entry">
                     <h3>Founding Software Developer (Part-time)</h3>
-                    <p class="meta">SignoSoft, Prague | 01/2015 – 12/2018</p>
+                    <p class="meta"><a href="https://signosoft.com" target="_blank">SignoSoft</a>, Prague | 01/2015 – 12/2018</p>
                     <p>Architected a multiplatform PDF signing app and built a machine learning-based car insurance recommender for VIG inc. using Recurrent Neural Networks.</p>
                 </div>
             </section>
@@ -75,20 +80,24 @@
             <section id="publications">
                 <h2>Selected Publications</h2>
                 <ul>
-                    <li>Brandejs, J., Hornblad, N., Valeev, E. F., et al. (2026). Tensor Algebra Processing Primitives (TAPP): Towards a Standard for Tensor Operations. <a href="https://arxiv.org/abs/2601.07827" target="_blank"><i>arXiv:2601.07827</i></a>.</li>
-                    <li>Fabbro, G., Brandejs, J., Saue, T. (2026). The nuclear electric quadrupole moment of 87Sr from highly accurate molecular relativistic calculations. <a href="https://arxiv.org/abs/2602.00855" target="_blank"><i>arXiv:2602.00855</i></a>.</li>
-                    <li>Brandejs, J., Pototschnig, J., Saue, T. (2025). Generating coupled cluster code for modern distributed memory tensor software. <a href="https://pubs.acs.org/doi/full/10.1021/acs.jctc.5c00219" target="_blank"><i>JCTC</i></a>; <a href="https://arxiv.org/abs/2409.06759" target="_blank">arXiv</a>.</li>
-                    <li>Visnak, J., Brandejs, J., Mate, M., Visscher, L., et al. (2024). DMRG-tailored coupled cluster method in the 4c-relativistic domain. <a href="https://pubs.acs.org/doi/10.1021/acs.jctc.4c00641" target="_blank"><i>JCTC</i></a>.</li>
-                    <li>Brabec, J., Brandejs, J., Kowalski, K., et al. (2021). Massively parallel quantum chemical density matrix renormalization group method. <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/jcc.26476" target="_blank"><i>JCC</i></a>.</li>
+                    <li>Brandejs, J., Saue, T., Gomes, A., Visscher, L., Bientinesi, P. (2026). Report on the second Toulouse Tensor Workshop. <a href="https://arxiv.org/abs/2602.05490" target="_blank"><i>arXiv:2602.05490</i> [cs.MS]</a>.</li>
+                    <li>Fabbro, G., Brandejs, J., Saue, T. (2026). The nuclear electric quadrupole moment of 87Sr from highly accurate molecular relativistic calculations. <a href="https://doi.org/10.1021/acs.jpca.6c00683" target="_blank"><i>J. Phys. Chem. A</i> 130 (16), 3187–3196</a>; <a href="https://arxiv.org/abs/2602.00855" target="_blank">arXiv</a>.</li>
+                    <li>Brandejs, J., Hornblad, N., Valeev, E. F., Heinecke, A., Hammond, J., Matthews, D., Bientinesi, P. (2026). Tensor Algebra Processing Primitives (TAPP): Towards a Standard for Tensor Operations. <a href="https://arxiv.org/abs/2601.07827" target="_blank"><i>arXiv:2601.07827</i></a>; <a href="https://github.com/TAPPorg/reference-implementation" target="_blank">reference implementation</a>.</li>
+                    <li>Sehlstedt, P., Brandejs, J., Bientinesi, P., Karlsson, L. (2026). The software landscape for the density matrix renormalization group. <a href="https://doi.org/10.1016/j.cpc.2026.110136" target="_blank"><i>Computer Physics Communications</i> 324, 110136</a>; <a href="https://arxiv.org/abs/2506.12629" target="_blank">arXiv</a>. Shortlisted in <a href="http://quattro.phys.sci.kobe-u.ac.jp/dmrg/condmat.html" target="_blank">"good reviews"</a> by Prof. T. Nishino.</li>
+                    <li>Brandejs, J., Pototschnig, J., Saue, T. (2025). Generating coupled cluster code for modern distributed memory tensor software. <a href="https://pubs.acs.org/doi/full/10.1021/acs.jctc.5c00219" target="_blank"><i>JCTC</i> 21, 15, 7320–7334</a>; <a href="https://arxiv.org/abs/2409.06759" target="_blank">arXiv</a>.</li>
+                    <li>Fabbro, G., Brandejs, J., Saue, T. (2025). Highly accurate expectation values using high-order relativistic coupled cluster theory. <a href="https://doi.org/10.1021/acs.jpca.5c02844" target="_blank"><i>J. Phys. Chem. A</i> 129 (30), 6942–6958</a>.</li>
+                    <li>Visnak, J., Brandejs, J., Mate, M., Visscher, L., et al. (2024). DMRG-tailored coupled cluster method in the 4c-relativistic domain. <a href="https://pubs.acs.org/doi/10.1021/acs.jctc.4c00641" target="_blank"><i>JCTC</i> 20 (20), 8862–8875</a>.</li>
+                    <li>Brabec, J., Brandejs, J., Kowalski, K., et al. (2021). Massively parallel quantum chemical density matrix renormalization group method. <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/jcc.26476" target="_blank"><i>JCC</i> 42, 534–544</a>.</li>
                 </ul>
             </section>
             
             <section id="teaching">
                 <h2>Teaching & Scientific Leadership</h2>
                 <ul>
-                    <li><b>Program Committee Member:</b> ISC High Performance 2026 (Algorithms & Performance), Hamburg, Germany.</li>
-                    <li><b>Standardization:</b> Co-founded and led the CECAM Workshop on Tensor Contraction Library Standardization (05/2024) and the <a href="https://tensor.sciencesconf.org/resource/page/id/5" target="_blank">2nd Toulouse Tensor Workshop</a> (09/2025), evangelizing standard interfaces for tensor operations. Currently leading a standardization working group.</li>
-                    <li><b>Teaching & Mentorship:</b> Established a project-based Machine Learning course for the Talnet network (2023-2025) and taught "Introduction to Quantum Mechanics" at the Technical University Liberec (2021-2024).</li>
+                    <li><b>Program Committee Member:</b> <a href="https://isc-hpc.com" target="_blank">ISC High Performance 2026</a> (Algorithms & Performance), Hamburg, Germany.</li>
+                    <li><b>Awards & Invited Talks:</b> Best Poster Prize at <a href="https://www.helsinki.fi/en/conferences/reusable-libraries-quantum-chemistry-2025" target="_blank">Reusable Libraries in Quantum Chemistry 2025</a> (Helsinki, 06/2025); Best Poster nomination at <a href="https://sc24.supercomputing.org/" target="_blank">SC24</a> (Atlanta, 11/2024); invited talk at the <a href="https://www.cat.hokudai.ac.jp/jcs8/" target="_blank">JCS8 Theoretical Chemistry Symposium</a> (Hokkaido University, 06/2024).</li>
+                    <li><b>Standardization:</b> Co-founded and led the <a href="https://tensor.sciencesconf.org/resource/page/id/5" target="_blank">CECAM Workshop on Tensor Contraction Library Standardization</a> (05/2024) and the <a href="https://tensor.sciencesconf.org/resource/page/id/5" target="_blank">2nd Toulouse Tensor Workshop</a> (09/2025), evangelizing standard interfaces for tensor operations. Currently leading a standardization working group.</li>
+                    <li><b>Teaching & Mentorship:</b> Established a project-based Machine Learning course for the <a href="https://talnet.info/" target="_blank">Talnet network</a> (2023-2025) and taught "Introduction to Quantum Mechanics" at the <a href="https://kfy.fp.tul.cz/katedra/zamestnanci" target="_blank">Technical University Liberec</a> (2021-2024). National-team supervisor and preparation-course organizer for the <a href="https://www.fzu.cz/en/news/secondary-school-team-wins-silver-medal-international-young-physicists-tournament-timisoara" target="_blank">International Young Physicist Tournament</a> (2019-2021).</li>
                     <li><b>Community Service:</b> Pioneered an ongoing weekly online Python course for children of Ukrainian war refugees via <a href="https://www.peopleinneed.net/" target="_blank">People in Need</a> (2022-Present).</li>
                 </ul>
             </section>
